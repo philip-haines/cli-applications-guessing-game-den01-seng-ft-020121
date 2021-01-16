@@ -1,23 +1,19 @@
-require "pry"
-
 def run_guessing_game
-  
-    num = rand(6) + 1
-    user_input = gets.chomp
-    
-    while user_input != "exit" do 
-      
-      if user_input.to_i == num
-        puts "You guessed the correct number!"
-      else
-         puts "Sorry! The computer guessed #{num}"
+  loop do
+      puts "Guess a number between 1 and 6."
+      guess = gets.chomp
+      computer_number = rand(1..6)
+      if guess == "exit"
+        puts "Goodbye!"
+        break
+      elsif guess.to_i == computer_number
+          puts "You guessed the correct number!"
+        elsif guess.to_i != computer_number
+          puts "The computer guessed #{computer_number}."
+        else
+          puts "Invalid input"
+        end
       end
-      
     end
-    
-    if user_input == "exit"
-      puts "Goodbye!"
-    end
-    
-end
+
 
