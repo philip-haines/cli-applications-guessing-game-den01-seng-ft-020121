@@ -20,6 +20,8 @@ def run_guessing_game
     elsif user_input != num
       puts "Sorry! The computer guessed #{num}"
     end
+    
+  end
   
   generate_num
   get_user_input
