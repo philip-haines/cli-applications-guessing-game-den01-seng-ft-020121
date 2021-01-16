@@ -1,8 +1,9 @@
+require "pry"
+
 def run_guessing_game
   
   def generate_num
     num = rand(1..6)
-    return num
   end
   
   def get_user_input
@@ -12,7 +13,7 @@ def run_guessing_game
   end
   
   def compare_guess (num, user_input)
-    
+    binding.pry
     if user_input == "exit"
       puts "Goodbye!"
     elsif user_input == num
