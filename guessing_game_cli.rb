@@ -6,6 +6,8 @@ def run_guessing_game
     user_input = gets.chomp
     output_statement = ""
     
+    while user_input != "exit" do 
+      
     if user_input == "exit"
       output_statement = "Goodbye!"
       puts output_statement
