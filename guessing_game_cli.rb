@@ -8,15 +8,12 @@ def run_guessing_game
     
     while user_input != "exit" do 
       
-    if user_input == "exit"
-      output_statement = "Goodbye!"
-      puts output_statement
-    elsif user_input == num
-      puts "You guessed the correct number!"
-    elsif user_input != num
-      output_statement = "Sorry! The computer guessed #{num}"
-      puts output_statement
-    end
+      if user_input.to_i == num
+        puts "You guessed the correct number!"
+      elsif user_input != num
+        output_statement = "Sorry! The computer guessed #{num}"
+        puts output_statement
+      end
   
 end
 
