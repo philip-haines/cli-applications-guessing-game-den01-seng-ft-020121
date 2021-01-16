@@ -8,7 +8,7 @@ def run_guessing_game
     
     if user_input == "exit"
       output_statement = "Goodbye!"
-      return output_statement
+      puts output_statement
     elsif user_input == num
       puts "You guessed the correct number!"
     elsif user_input != num
