@@ -7,11 +7,11 @@ def run_guessing_game
     
     while user_input != "exit" do 
       
-      if user_input.to_i == num
-        puts "You guessed the correct number!"
+      if user_input.to_i != num
+        puts "Sorry! The computer guessed #{num}"
         break
       else
-         puts "Sorry! The computer guessed #{num}"
+        puts "You guessed the correct number!"
          break
       end
       
